@@ -1,0 +1,106 @@
+.topbar {
+  width: 100%;
+  box-shadow: 0 2px 4px 5px #ddd;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  z-index: 1;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.leftMenu {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.logo > a > span {
+  font-weight: 600;
+  color: teal;
+}
+
+.leftMenu > a {
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.searchWrapper {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.searchWrapper > i {
+  position: absolute;
+  color: #999;
+
+  top: 50%;
+  left: 24px;
+  font-size: 18px;
+
+  transform: translateY(-50%);
+}
+
+.searchWrapper > input {
+  width: 100%;
+
+  border: 1px solid rgb(245, 242, 242);
+  background-color: rgb(245, 242, 242);
+  color: black;
+
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px 24px 8px 48px;
+}
+
+.rightMenu {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cartWrapper i {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.cartCount {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 8px;
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: teal;
+  border-radius: 50%;
+}
+
+.cartWrapper > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

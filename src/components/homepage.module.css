@@ -1,0 +1,76 @@
+.conatiner {
+  width: 100%;
+  height: auto;
+  margin: 150px 0 100px 0;
+  font-size: 32px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+
+  margin-bottom: 0;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 24px;
+}
+
+.productCard {
+  width: 100%;
+  max-width: 250px;
+  margin: 16px 1%;
+
+  box-shadow: 0 4px 5px #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.productImage {
+  width: 100%;
+  box-sizing: border-box;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  cursor: pointer;
+}
+
+.productMeta {
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.productMeta > h4 {
+  font-size: 18px;
+  font-weight: 600;
+
+  margin: 0;
+
+  color: black;
+  /* font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.productMeta > h5 {
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: rgb(136, 135, 135);
+}
+
+.productMeta > p {
+  margin-top: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: teal;
+}
