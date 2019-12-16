@@ -83,14 +83,16 @@
 
 .cartWrapper i {
   position: relative;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
   margin-right: 25px;
+  margin-top: 12px;
 }
 
 .cartCount {
   font-size: 14px;
   font-weight: 600;
+  margin-left: 4px;
   padding: 5px 8px;
   position: absolute;
   top: 0;
@@ -99,8 +101,45 @@
   border-radius: 50%;
 }
 
-.cartWrapper > img {
+.profile {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .topbar {
+    padding: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .leftMenu > a {
+    font-size: 18px;
+  }
+
+  .searchWrapper {
+    display: none;
+  }
+
+  .rightMenu {
+    margin: auto 0px auto 25px;
+  }
+
+  .cartWrapper i {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+
+  .cartCount {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  .profile {
+    width: 30px;
+    height: 30px;
+  }
 }

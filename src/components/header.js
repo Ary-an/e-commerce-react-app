@@ -9,8 +9,9 @@ class Header extends React.Component {
       cartValue: localStorage.getItem("cartCount")
     };
   }
+
   render() {
-    if (this.state.cartValue == null) {
+    if (this.state.cartValue === null) {
       localStorage.setItem("cartCount", "0");
       this.setState({ cartValue: localStorage.getItem("cartCount") });
     }
@@ -44,7 +45,11 @@ class Header extends React.Component {
               <p className={classes.cartCount}>{this.state.cartValue}</p>
             </Link>
           </div>
-          <img src="/" alt="profile pic" />
+          <img
+            className={classes.profile}
+            src="https://images.pexels.com/photos/34950/pexels-photo.jpg"
+            alt="profile pic"
+          />
         </div>
       </div>
     );
